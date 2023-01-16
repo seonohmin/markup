@@ -1,0 +1,58 @@
+.dimmed-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.8);
+  z-index: 9999;
+}
+.order-type-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3.2rem 0 4rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+  background-color: #fff;
+  text-align: center;
+  z-index: 10000;
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $booking-color-text1;
+  }
+  .type-list {
+    display: flex;
+    margin-top: 3.2rem; //8배수, 4의 배수
+  }
+  .type-item {
+    flex: 1;
+    & + .type-item {
+      border-left: 0.1rem solid $booking-color-border103;
+    }
+    .icon {
+      width: 10rem;
+      height: auto;
+      color: $booking-color-bg118;
+      fill: $booking-color-bg118;
+    }
+  }
+  .desc {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: $booking-color-text1;
+  }
+  .btn-selection {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 2.8rem;
+    color: $booking-color-text101;
+    background-color: $booking-color-bg189;
+  }
+}
