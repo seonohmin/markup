@@ -4,5 +4,9 @@ $font-default: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemF
 
 // size
 $a-padding: 1rem;
+$m-padding: 1.8rem;
 $place-header-height: 4rem;
 $place-tab-height: 4rem;
+
+$header-height: $place-header-height + $place-tab-height;
+$order-box-area-height: 7rem;

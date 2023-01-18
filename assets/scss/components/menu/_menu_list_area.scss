@@ -1,0 +1,59 @@
+.menu-list-area {
+  padding: 2rem $m-padding 1rem;
+  background-color: #fff;
+  &:not(.new):not(.poppular) {
+    margin-top: 1rem;
+  }
+  &.new {
+    border-bottom: 0.1rem solid $booking-color-border144;
+  }
+  &.is-closed {
+    padding: 2.4rem $m-padding;
+    & + .is-closed {
+      margin-top: 0;
+      border-top: 0.1rem solid $booking-color-border144;
+    }
+    .ico-arrow {
+      transform: rotate(180deg);
+    }
+    .menu-list {
+      display: none;
+    }
+  }
+  .menu-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-area {
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: $booking-color-text100;
+    letter-spacing: -0.03rem;
+  }
+  .btn-toggle {
+    display: flex;
+    margin: -1.6rem;
+    padding: 1.6rem;
+  }
+  .period {
+    font-size: 1.4rem;
+    letter-spacing: -0.03rem;
+    color: $booking-color-text4;
+    &::before {
+      content: '';
+      display: inline-block;
+      margin: 0 1rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      line-height: 1;
+      border-radius: 100%;
+      background-color: #ededed;
+      vertical-align: middle;
+    }
+  }
+}

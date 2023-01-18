@@ -1,0 +1,57 @@
+.order-form-area {
+  .page-title-area {
+    height: 10.4rem;
+    background-image: linear-gradient(264deg, #3accff, #2cec88);
+    .title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 5.6rem;
+      background-image: linear-gradient(264deg, #3accff, #2cec88);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      z-index: 1;
+    }
+    .btn-close {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 5.6rem;
+      height: 5.6rem;
+      .ico-close {
+        width: 1.8rem;
+      }
+    }
+  }
+  .btn-order-area {
+    margin-top: 2rem;
+    @include common-inner;
+
+    .btn-order {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem $m-padding 0;
+      width: calc(100% - #{$m-padding}* 2);
+      height: 5rem;
+      border-radius: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      background-color: $green;
+      color: #fff;
+      .ico-n-logo {
+        margin-right: 0.6rem;
+      }
+    }
+  }
+
+  .go-to-top {
+    padding: 2.6rem 0;
+    background: none;
+  }
+}

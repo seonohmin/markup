@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   margin-top: 1.2rem;
-  .tab-swich {
+  .tab-switch {
     flex: 1;
     background-color: $booking-color-bg158;
     line-height: 4rem;
@@ -65,6 +65,7 @@
     }
   }
 }
+
 .info-main-notice {
   display: flex;
   align-items: center;

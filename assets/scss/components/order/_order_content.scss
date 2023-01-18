@@ -1,0 +1,188 @@
+.order-content {
+  margin: -4rem 1rem 0;
+
+  .common-inner {
+    position: relative;
+    background-color: #fff;
+    &::before,
+    s &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0.5rem;
+      background: url('../images/bg-pattern.png') repeat-x;
+      background-size: auto 0.5rem;
+    }
+    &::before {
+      top: -0.5rem;
+    }
+    &::after {
+      bottom: -0.5rem;
+      transform: rotate(180deg);
+    }
+  }
+
+  .order-content-top {
+    position: relative;
+    padding: 2.6rem $m-padding 2.4rem;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2.6rem;
+      right: $m-padding;
+      width: 8.3rem;
+      height: 8.3rem;
+      border-radius: 100%;
+      background: url('https://via.placeholder.com/83') no-repeat;
+    }
+    .title {
+      line-height: 1.2;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $green;
+    }
+    .desc {
+      margin-top: 0.8rem;
+      line-height: 1.2;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $booking-color-text6;
+    }
+    .count {
+      margin-top: 0.8rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      color: $booking-color-text4;
+      letter-spacing: -0.04rem;
+    }
+  }
+
+  .order-content-body {
+    border-top: 0.1rem dashed $booking-color-border147;
+
+    .no-order {
+      padding: 7rem 0;
+      text-align: center;
+      .txt {
+        margin-top: 0.6rem;
+        font-size: 1.4rem;
+        color: #8f8f8f;
+      }
+    }
+
+    .menu-list {
+      padding: 0 $m-padding;
+    }
+
+    .menu-item {
+      position: relative;
+      align-items: flex-start;
+      padding: 2.2rem $m-padding;
+
+      .menu-name-group {
+        padding-right: 4rem;
+      }
+
+      .menu-name {
+        line-height: 2.3rem;
+        font-size: 1.8rem;
+      }
+
+      .menu-desc {
+        margin-top: 0.2rem;
+      }
+
+      .btn-option {
+        display: inline-block;
+        margin-top: 0.8rem;
+        padding: 0 0.6rem;
+        line-height: 2rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid $booking-color-border109;
+        background-color: $booking-color-bg21;
+        font-size: 1.2rem;
+        color: $booking-color-text4;
+      }
+
+      .amount-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.8rem;
+
+        .menu-price {
+          margin-top: 0;
+          font-size: 1.8rem;
+        }
+      }
+
+      .btn-delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2.2rem 1.8rem;
+        .ico-delete {
+          width: 1.4rem;
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .order-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 $m-padding;
+      padding: 2.4rem 0;
+      border-top: 0.2rem solid $booking-color-border112;
+      font-size: 2rem;
+      font-weight: 700;
+
+      .total-price {
+        font-size: 1.9rem;
+        color: $point-color;
+      }
+    }
+  }
+
+  .btn-menu-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.2rem auto 3rem;
+    width: 15rem;
+    line-height: 4.8rem;
+    border-radius: 2.4rem;
+    border: 0.1rem solid $booking-color-border101;
+    background-color: #fff;
+    color: $booking-color-text2;
+    box-shadow: s 0 2px 3px 0 rgba(0, 0, 0, 0.04);
+
+    .ico-add {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.6rem;
+      width: 1.3rem;
+      height: 1.3rem;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 1.3rem;
+        height: 0.1rem;
+        background-color: $green;
+      }
+      &::afrem {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 0.1rem;
+        height: 1.3rem;
+        background-color: $green;
+      }
+    }
+  }
+}

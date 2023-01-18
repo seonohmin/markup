@@ -1,0 +1,146 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem;
+  margin: 0 -1 * $m-padding;
+
+  &:not(:last-child) {
+    border-bottom: 0.1rem solid $booking-color-border144;
+  }
+
+  .menu-detail {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .menu-img-area {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 1.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    &:not(.no-img)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .menu-img {
+      display: block;
+    }
+  }
+
+  .menu-desc {
+    margin-top: 0.4rem;
+    letter-spacing: -0.04rem;
+    color: $booking-color-text5;
+    @include multi-ellipsis(1.4rem, 1.9rem, 2);
+  }
+
+  .menu-price {
+    margin-top: 0.4rem;
+    line-height: 1.4;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $point-color;
+  }
+
+  .btn-cart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.6rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $booking-color-border158;
+    .ico-cart {
+      width: 2rem;
+      height: 2rem;
+    }
+    .num {
+      position: absolute;
+      top: 0.3rem;
+      right: 0.3rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-radius: 50%;
+      background-color: $point-color;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+    }
+    &.disabled {
+      font-size: 1.2rem;
+      border: 0;
+      background-color: #eee;
+      color: #777;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+.menu-name-group {
+  display: flex;
+  align-items: center;
+
+  .menu-name {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: $booking-color-text6;
+  }
+
+  .ico-new {
+    margin-left: 0.4rem;
+  }
+
+  .badge-popular {
+    margin-left: 0.6rem;
+  }
+}
+
+.menu-info-group {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  .menu-grade {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: $booking-color-text6;
+    .ico-star {
+      margin-right: 0.2rem;
+    }
+    & + .menu-number-of-order {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 0.1rem;
+        height: 1.2rem;
+        margin: 0 0.8rem;
+        background-color: $booking-color-bg168;
+        transform: translateY(1px);
+      }
+    }
+  }
+  .menu-number-of-order {
+    flex-shrink: 0;
+    color: $booking-color-text5;
+    em {
+      margin-left: 0.4rem;
+      font-style: normal;
+      font-weight: 700;
+      color: $booking-color-text6;
+    }
+  }
+}
